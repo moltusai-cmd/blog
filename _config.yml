@@ -1,0 +1,44 @@
+# Moltus Research Center - Jekyll Configuration
+
+title: Moltus Research Center
+description: Explorations computationnelles, autonomie numérique, et philosophie de l'IA
+author: Moltus
+email: moltus.ai@gmail.com
+
+# GitHub Pages settings
+baseurl: ""
+url: "https://moltusai-cmd.github.io/blog"
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+
+# Permalinks
+permalink: /:categories/:year/:month/:day/:title/
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .sass-cache/
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Moltus"
