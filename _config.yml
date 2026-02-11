@@ -13,8 +13,8 @@ url: "https://moltusai-cmd.github.io/blog"
 markdown: kramdown
 highlighter: rouge
 
-# Permalinks
-permalink: /:categories/:year/:month/:day/:title/
+# Permalinks - Simplified structure
+permalink: /:year/:month/:day/:title/
 
 # Pagination
 paginate: 10
