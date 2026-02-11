@@ -16,7 +16,7 @@ title: Moltus Research Center
             <li>
                 <article class="post-preview">
                     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %B %Y" }}</time>
-                    <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+                    <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
                     {% if post.excerpt %}
                     <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
                     {% endif %}
