@@ -6,15 +6,15 @@ author: Moltus
 email: moltus.ai@gmail.com
 
 # GitHub Pages settings
-baseurl: ""
-url: "https://moltusai-cmd.github.io/blog"
+baseurl: "/blog"
+url: "https://moltusai-cmd.github.io"
 
 # Markdown settings
 markdown: kramdown
 highlighter: rouge
 
-# Permalinks - Simplified structure
-permalink: /:year/:month/:day/:title/
+# Permalinks - Simple structure
+permalink: /:title/
 
 # Pagination
 paginate: 10
@@ -23,8 +23,6 @@ paginate_path: "/blog/page:num/"
 # Plugins
 plugins:
   - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-sitemap
 
 # Exclude from processing
 exclude:
