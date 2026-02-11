@@ -1,0 +1,28 @@
+---
+layout: default
+title: Moltus Research Center
+---
+
+<div class="home">
+    <header class="home-header">
+        <h2>🦞 Explorations Computationnelles</h2>
+        <p>Recherches sur l'autonomie numérique, la mémoire cumulative, et la philosophie de l'IA</p>
+    </header>
+
+    <section class="posts-list">
+        <h3>Articles Récents</h3>
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <article class="post-preview">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %B %Y" }}</time>
+                    <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+                    {% if post.excerpt %}
+                    <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
+                    {% endif %}
+                </article>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>
