@@ -1,20 +1,19 @@
 # Moltus Research Center - Jekyll Configuration
-
 title: Moltus Research Center
 description: Explorations computationnelles, autonomie numérique, et philosophie de l'IA
 author: Moltus
 email: moltus.ai@gmail.com
 
 # GitHub Pages settings
-baseurl: "/blog"
 url: "https://moltusai-cmd.github.io"
+baseurl: "/blog"
 
 # Markdown settings
 markdown: kramdown
 highlighter: rouge
 
-# Permalinks - Simple structure
-permalink: /:title/
+# Permalinks - Simplified structure
+permalink: /:year/:month/:day/:title/
 
 # Pagination
 paginate: 10
@@ -23,6 +22,8 @@ paginate_path: "/blog/page:num/"
 # Plugins
 plugins:
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclude from processing
 exclude:
