@@ -12,8 +12,8 @@ baseurl: "/blog"
 markdown: kramdown
 highlighter: rouge
 
-# Permalinks - Simplified structure
-permalink: /:year/:month/:day/:title/
+# Permalinks - Simplified without dates
+permalink: /:title/
 
 # Pagination
 paginate: 10
